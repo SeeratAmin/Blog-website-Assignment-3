@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Popular Posts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-[#0e3036] text-white leading-relaxed">
+
+    <!-- Navbar -->
+    <div class="flex justify-between items-center bg-[#082429] px-4 sm:px-6 md:px-10 py-4 shadow-md sticky top-0 z-50 flex-wrap md:flex-nowrap">
+      <div class="flex items-center gap-5">
+        <input type="submit" value="HOME" class="px-4 py-2 text-sm rounded-md bg-white text-black hover:bg-[#d7eff1] hover:scale-105 transition cursor-pointer" />
+        <label for="Interest" class="text-white font-bold text-base">Interest</label>
+        <select name="Interest" id="Interest" class="px-4 py-2 text-sm rounded-md bg-white cursor-pointer hover:bg-[#d7eff1] hover:scale-105 transition">
+          <option value="Fashion">Fashion</option>
+          <option value="Politics">Politics</option>
+          <option value="Cenima">Cenima</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="text-xl md:text-2xl font-bold text-white text-center flex-grow">My Blogs</div>
+
+      <div class="flex items-center gap-5 mt-3 md:mt-0">
+        <input type="submit" value="Contact" class="px-4 py-2 text-sm rounded-md bg-white text-black hover:bg-[#d7eff1] hover:scale-105 transition cursor-pointer" />
+        <a href="about.html">
+          <input type="submit" value="About" class="px-4 py-2 text-sm rounded-md bg-white text-black hover:bg-[#d7eff1] hover:scale-105 transition cursor-pointer" />
+        </a>
+        <input type="submit" value="Blog posts" class="px-4 py-2 text-sm rounded-md bg-white text-black hover:bg-[#d7eff1] hover:scale-105 transition cursor-pointer" />
+      </div>
+    </div>
+
+    <!-- Popular Posts Header -->
+    <header class="text-center my-12">
+      <div class="text-3xl md:text-4xl font-bold leading-snug mb-8">
+        Our Popular Posts
+      </div>
+    </header>
+
+    <!-- Popular Posts Grid -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-6 md:px-10">
+      <!-- Post 1 -->
+      <div class="bg-[#1b4c5e] rounded-lg overflow-hidden shadow-xl">
+        <img src="https://images.unsplash.com/photo-1625204614387-6509254d5b02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dWx0aW1hdGUlMjBmYXNoaW9uJTIwdHJlbmRzJTIwb2YlMjAyMDI1fGVufDB8fDB8fHww" alt="Fashion Post" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold">The Ultimate Fashion Trends of 2025</h3>
+          <p class="mt-2 text-sm">Explore the biggest fashion trends of 2025 and how to incorporate them into your daily style.</p>
+          <div class="mt-4">
+            <a href="#" class="text-[#d7eff1] font-semibold hover:text-white">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Post 2 -->
+      <div class="bg-[#1b4c5e] rounded-lg overflow-hidden shadow-xl">
+        <img src="https://plus.unsplash.com/premium_photo-1713820020903-527120477bcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW1wYWN0JTIwb2YlMjBwb2xpdGljcyUyMG9uJTIwZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D" alt="Politics Post" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold">The Impact of Politics on Fashion</h3>
+          <p class="mt-2 text-sm">How political movements have shaped and influenced fashion trends across the globe.</p>
+          <div class="mt-4">
+            <a href="#" class="text-[#d7eff1] font-semibold hover:text-white">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Post 3 -->
+      <div class="bg-[#1b4c5e] rounded-lg overflow-hidden shadow-xl">
+        <img src="https://images.unsplash.com/photo-1733322992706-1210ca79f4df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2luZW1hdGljJTIwZXZvbHV0aW9uJTIwb2YlMjBmYXNoaW9ufGVufDB8fDB8fHww" alt="Cinema Post" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold">The Cinematic Evolution of Fashion</h3>
+          <p class="mt-2 text-sm">From the silver screen to the streets, how movies have influenced global fashion.</p>
+          <div class="mt-4">
+            <a href="#" class="text-[#d7eff1] font-semibold hover:text-white">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Post 4 -->
+      <div class="bg-[#1b4c5e] rounded-lg overflow-hidden shadow-xl">
+        <img src="https://plus.unsplash.com/premium_photo-1682308287412-b4bf1fde4c6b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHRlY2glMjBpbm5vdmF0aW9ufGVufDB8fDB8fHww" alt="Tech Post" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Tech Innovations in Fashion</h3>
+          <p class="mt-2 text-sm">A look at the intersection of technology and fashion, from wearables to AI-powered designs.</p>
+          <div class="mt-4">
+            <a href="#" class="text-[#d7eff1] font-semibold hover:text-white">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Post 5 -->
+      <div class="bg-[#1b4c5e] rounded-lg overflow-hidden shadow-xl">
+        <img src="https://images.unsplash.com/photo-1501959915551-4e8d30928317?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxpZmVzdHlsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Lifestyle Post" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Lifestyle Fashion and Comfort</h3>
+          <p class="mt-2 text-sm">How to blend comfort and style to create the perfect lifestyle wardrobe.</p>
+          <div class="mt-4">
+            <a href="#" class="text-[#d7eff1] font-semibold hover:text-white">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Post 6 -->
+      <div class="bg-[#1b4c5e] rounded-lg overflow-hidden shadow-xl">
+        <img src="https://images.unsplash.com/photo-1699442108600-1a9e875b1104?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFzaGlvbiUyMGFuZCUyMGN1bHR1cmV8ZW58MHx8MHx8fDA%3D" alt="Other Post" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Fashion and Culture: A Global Perspective</h3>
+          <p class="mt-2 text-sm">An in-depth look at how culture influences fashion trends around the world.</p>
+          <div class="mt-4">
+            <a href="#" class="text-[#d7eff1] font-semibold hover:text-white">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Create Blog Button -->
+    <div class="flex justify-center mt-12">
+      <a href="create-blog.html">
+        <input type="submit" value="Create Your Blog" class="text-xl font-bold px-8 py-3 rounded-xl bg-white text-[#0e3036] hover:bg-[#c7e6e8] hover:scale-105 transition cursor-pointer" />
+      </a>
+    </div>
+
+  </body>
+</html

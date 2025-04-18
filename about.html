@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-[#0e3036] text-white leading-relaxed">
+
+  <!-- Navbar -->
+  <div class="flex justify-between items-center bg-[#082429] px-4 sm:px-6 md:px-10 py-4 shadow-md sticky top-0 z-50 flex-wrap md:flex-nowrap">
+    <div class="flex items-center gap-5">
+      <a href="index.html">
+        <input type="submit" value="HOME" class="px-4 py-2 text-sm rounded-md bg-white text-black hover:bg-[#d7eff1] hover:scale-105 transition cursor-pointer" />
+      </a>
+      <label for="Interest" class="text-white font-bold text-base">Interest</label>
+      <select name="Interest" id="Interest" class="px-4 py-2 text-sm rounded-md bg-white cursor-pointer hover:bg-[#d7eff1] hover:scale-105 transition">
+        <option value="Fashion">Fashion</option>
+        <option value="Politics">Politics</option>
+        <option value="Cenima">Cenima</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="text-xl md:text-2xl font-bold text-white text-center flex-grow">My Blogs</div>
+
+    <div class="flex items-center gap-5 mt-3 md:mt-0">
+      <a href="contact.html">
+        <input type="submit" value="Contact" class="px-4 py-2 text-sm rounded-md bg-white text-black hover:bg-[#d7eff1] hover:scale-105 transition cursor-pointer" />
+      </a>
+      <a href="about.html">
+        <input type="submit" value="About" class="px-4 py-2 text-sm rounded-md bg-white text-black hover:bg-[#d7eff1] hover:scale-105 transition cursor-pointer" />
+      </a>
+      <a href="blog-posts.html">
+        <input type="submit" value="Blog posts" class="px-4 py-2 text-sm rounded-md bg-white text-black hover:bg-[#d7eff1] hover:scale-105 transition cursor-pointer" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Page Title -->
+  <div class="text-3xl md:text-4xl font-bold text-center my-10">
+    About Us
+  </div>
+
+  <!-- About Section -->
+  <section class="px-6 md:px-10 pb-12">
+    <div class="text-lg mb-6">
+      <p>Welcome to My Blogs! We are a community dedicated to sharing insightful, thought-provoking, and engaging content about various topics ranging from fashion, politics, and cinema to tech trends and much more. Our mission is to inspire creativity and stimulate discussions that lead to a deeper understanding of the world around us.</p>
+    </div>
+
+    <div class="text-xl font-semibold text-center mb-6">
+      Our Purpose
+    </div>
+    <div class="text-md mb-6 text-center">
+      We believe everyone has a story to tell, and My Blogs is here to give voice to those stories while informing and entertaining readers from all walks of life.
+    </div>
+
+    <!-- Table Section -->
+    <div class="overflow-x-auto bg-[#134047] rounded-xl shadow-md p-6">
+      <h2 class="text-2xl font-semibold text-center mb-4">Key Blog Stats</h2>
+      <table class="min-w-full text-sm text-left text-gray-400">
+        <thead class="bg-[#082429]">
+          <tr>
+            <th class="px-6 py-3">Statistic</th>
+            <th class="px-6 py-3">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="px-6 py-3">Total Posts</td>
+            <td class="px-6 py-3">150+</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-3">Active Readers</td>
+            <td class="px-6 py-3">1200+</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-3">Categories</td>
+            <td class="px-6 py-3">5</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-3">Average Monthly Visitors</td>
+            <td class="px-6 py-3">10,000+</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-[#082429] text-white text-center py-6 mt-12">
+    <p>© 2025 My Blogs. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript functionality for the Interest select dropdown -->
+  <script>
+    const interestSelect = document.getElementById('Interest');
+    interestSelect.addEventListener('change', (event) => {
+      const selectedInterest = event.target.value;
+      console.log('Selected interest:', selectedInterest);
+      // You can add functionality here, like filtering blog posts based on the selected interest.
+    });
+  </script>
+
+</body>
+</html>
